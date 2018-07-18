@@ -37,7 +37,7 @@ class Shoe
         // 1
         var shoe1Images = [UIImage]()
         for _ in 1...5{
-            shoe1Images.append(UIImage(named: "z\(1)")!)
+            shoe1Images.append(UIImage(named: "e\(1)")!)
         }
         let shoe1 = Shoe(uid: "875942-100", name: "Dagmar - Coat", images: shoe1Images,price:"15", priceRent:68, description: "", detail: "")
         shoes.append(shoe1)
@@ -47,7 +47,7 @@ class Shoe
         for _ in 1...3 {
             shoe2Images.append(UIImage(named: "x1")!)
         }
-        let shoe2 = Shoe(uid: "880843-003", name: " Rodebjer - Jacket ", images: shoe2Images, price: "15", priceRent:97, description: "", detail: "")
+        let shoe2 = Shoe(uid: "880843-003", name: " Rodebjer - Trousers ", images: shoe2Images, price: "15", priceRent:97, description: "", detail: "")
         shoes.append(shoe2)
         
         
@@ -64,7 +64,7 @@ class Shoe
         for i in 1...6 {
             shoe4Images.append(UIImage(named: "f\(i)")!)
         }
-        let shoe4 = Shoe(uid: "805144-852", name: "TECH FLEECE WINDRUNNER", images: shoe4Images, price: "47", priceRent:80, description: "The Nike Sportswear Tech Fleece Windrunner Men's Hoodie is redesigned for cooler weather with smooth, engineered fleece that offers lightweight warmth. Bonded seams lend a modern update to the classic chevron design.", detail: "The Nike Sportswear Tech Fleece Windrunner Men's Hoodie is redesigned for cooler weather with smooth, engineered fleece that offers lightweight warmth. Bonded seams lend a modern update to the classic chevron design.")
+        let shoe4 = Shoe(uid: "805144-852", name: "Filippa k", images: shoe4Images, price: "47", priceRent:80, description: "", detail: "")
         shoes.append(shoe4)
         
         return shoes

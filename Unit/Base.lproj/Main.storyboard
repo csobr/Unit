@@ -63,7 +63,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="444"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="z1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MhY-RV-bsR">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="e1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MhY-RV-bsR">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="373"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="373" id="aTV-xn-8x9"/>
@@ -71,14 +71,14 @@
                                             </constraints>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dagmar - Coat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1b-ZR-hIs">
-                                            <rect key="frame" x="147.66666666666666" y="374" width="79.666666666666657" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dagmar - Coat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1b-ZR-hIs">
+                                            <rect key="frame" x="138" y="381" width="92" height="21"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9Q-dC-QOv">
-                                            <rect key="frame" x="265.33333333333331" y="376" width="36" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="40 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9Q-dC-QOv">
+                                            <rect key="frame" x="256" y="381" width="49" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="gyy-qR-b2N"/>
                                             </constraints>
@@ -87,7 +87,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" $68" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cR-kk-ipt">
-                                            <rect key="frame" x="175" y="399" width="25" height="21"/>
+                                            <rect key="frame" x="172" y="404" width="25" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="v4n-ni-51a"/>
                                             </constraints>
@@ -95,24 +95,34 @@
                                             <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2A-wf-qDA">
+                                            <rect key="frame" x="82" y="382" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="WtX-r4-XwH"/>
+                                                <constraint firstAttribute="width" constant="20" id="YkH-Rb-ukh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                            <state key="normal" image="add"/>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="MhY-RV-bsR" firstAttribute="leading" secondItem="v2e-ng-NS7" secondAttribute="leading" id="1N5-g7-XvY"/>
                                         <constraint firstItem="MhY-RV-bsR" firstAttribute="leading" secondItem="v2e-ng-NS7" secondAttribute="leading" id="2Th-Tk-og9"/>
-                                        <constraint firstAttribute="trailing" secondItem="p9Q-dC-QOv" secondAttribute="trailing" constant="73.666666666666686" id="BE7-jV-F7j"/>
-                                        <constraint firstItem="i1b-ZR-hIs" firstAttribute="top" secondItem="MhY-RV-bsR" secondAttribute="bottom" constant="1" id="CUt-TR-P3J"/>
+                                        <constraint firstAttribute="trailing" secondItem="p9Q-dC-QOv" secondAttribute="trailing" constant="70" id="BE7-jV-F7j"/>
+                                        <constraint firstItem="f2A-wf-qDA" firstAttribute="leading" secondItem="v2e-ng-NS7" secondAttribute="leadingMargin" constant="66" id="SZp-1O-FUy"/>
                                         <constraint firstItem="MhY-RV-bsR" firstAttribute="top" secondItem="v2e-ng-NS7" secondAttribute="top" id="TiS-dz-hsV"/>
-                                        <constraint firstItem="5cR-kk-ipt" firstAttribute="top" secondItem="i1b-ZR-hIs" secondAttribute="bottom" constant="4" id="YDO-M9-Ygl"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="5cR-kk-ipt" secondAttribute="bottom" constant="8" id="Vrp-2U-ZT4"/>
                                         <constraint firstAttribute="trailing" secondItem="MhY-RV-bsR" secondAttribute="trailing" id="aSI-Oj-pac"/>
-                                        <constraint firstItem="i1b-ZR-hIs" firstAttribute="top" secondItem="MhY-RV-bsR" secondAttribute="bottom" constant="1" id="alD-eL-6gc"/>
-                                        <constraint firstItem="p9Q-dC-QOv" firstAttribute="top" secondItem="MhY-RV-bsR" secondAttribute="bottom" constant="3" id="bcO-EG-Alk"/>
+                                        <constraint firstItem="5cR-kk-ipt" firstAttribute="top" secondItem="i1b-ZR-hIs" secondAttribute="bottom" constant="2" id="aef-cy-F4F"/>
+                                        <constraint firstItem="p9Q-dC-QOv" firstAttribute="top" secondItem="MhY-RV-bsR" secondAttribute="bottom" constant="8" id="bcO-EG-Alk"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="f2A-wf-qDA" secondAttribute="bottom" constant="31" id="dft-81-d0W"/>
+                                        <constraint firstItem="f2A-wf-qDA" firstAttribute="top" secondItem="MhY-RV-bsR" secondAttribute="bottom" constant="9" id="ede-xl-kRs"/>
+                                        <constraint firstItem="i1b-ZR-hIs" firstAttribute="centerX" secondItem="v2e-ng-NS7" secondAttribute="centerX" constant="-3.5" id="g2Z-jK-Lsy"/>
                                         <constraint firstAttribute="trailing" secondItem="MhY-RV-bsR" secondAttribute="trailing" id="k3g-6C-CPW"/>
-                                        <constraint firstItem="5cR-kk-ipt" firstAttribute="centerX" secondItem="v2e-ng-NS7" secondAttribute="centerX" id="mUg-VG-aQV"/>
-                                        <constraint firstItem="i1b-ZR-hIs" firstAttribute="centerX" secondItem="v2e-ng-NS7" secondAttribute="centerX" id="pfb-gG-DSc"/>
+                                        <constraint firstItem="5cR-kk-ipt" firstAttribute="centerX" secondItem="v2e-ng-NS7" secondAttribute="centerX" constant="-3" id="mUg-VG-aQV"/>
                                         <constraint firstItem="MhY-RV-bsR" firstAttribute="top" secondItem="v2e-ng-NS7" secondAttribute="top" id="pnp-tt-jtl"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="p9Q-dC-QOv" secondAttribute="bottom" constant="39" id="x6d-xw-fWi"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="p9Q-dC-QOv" secondAttribute="bottom" constant="34" id="x6d-xw-fWi"/>
                                         <constraint firstItem="MhY-RV-bsR" firstAttribute="top" secondItem="v2e-ng-NS7" secondAttribute="top" id="y7m-LC-WYd"/>
-                                        <constraint firstItem="p9Q-dC-QOv" firstAttribute="leading" secondItem="i1b-ZR-hIs" secondAttribute="trailing" constant="38" id="yuD-H1-bsH"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -131,7 +141,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="NEW" id="tSE-2r-aOw">
                         <barButtonItem key="backBarButtonItem" title=" " id="nXk-dy-qiq"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu-1" id="bAc-5r-3fg">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="bAc-5r-3fg">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.25967020270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="pro20" id="QSc-2F-krw">
@@ -1127,7 +1137,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="EXPLORE" id="iRE-VS-3ib">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu-1" id="bfj-5e-LhA">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="bfj-5e-LhA">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="pro20" id="dZb-1E-fzf"/>
@@ -1183,16 +1193,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="48" height="48"/>
+        <image name="e1" width="828" height="1242"/>
         <image name="f1" width="455" height="475"/>
         <image name="icon-bag" width="26" height="27"/>
         <image name="icon-bag-filled" width="25" height="26"/>
         <image name="icon-home" width="24" height="25"/>
         <image name="icon-search" width="25" height="25"/>
-        <image name="menu-1" width="16" height="15"/>
+        <image name="menu" width="21" height="18"/>
         <image name="nav" width="50" height="50"/>
         <image name="pro20" width="30" height="29"/>
         <image name="s1" width="455" height="475"/>
         <image name="t1" width="455" height="475"/>
-        <image name="z1" width="828" height="1242"/>
     </resources>
 </document>
