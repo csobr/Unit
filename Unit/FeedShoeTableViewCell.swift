@@ -26,8 +26,9 @@ class FeedShoeTableViewCell : UITableViewCell
         shoeImageView.image = shoe.images?.first
         shoeNameLabel.text = shoe.name
         if let price = shoe.price {
-            shoePriceLabel.text = "\(price): min"
+            shoePriceLabel.text =  "\(price) min"
         }
+       
         if let priceRent = shoe.priceRent {
          RentPrice.text = "$\(priceRent)"
         }else {
