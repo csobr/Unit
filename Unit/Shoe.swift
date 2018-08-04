@@ -38,7 +38,7 @@ class Shoe
         for i in 1...5{
             shoe1Images.append(UIImage(named: "s\(i)")!)
         }
-        let shoe1 = Shoe(uid: "875942-100", name: "Acne Studios - Lamp Black", images: shoe1Images,price: 380, priceRent:68, description: "", detail: "")
+        let shoe1 = Shoe(uid: "875942-100", name: "Flippa K - Jacket", images: shoe1Images,price:25, priceRent:25-30, description: "", detail: "")
         shoes.append(shoe1)
         
         // 2
@@ -46,7 +46,7 @@ class Shoe
         for i in 1...3 {
             shoe2Images.append(UIImage(named: "t\(i)")!)
         }
-        let shoe2 = Shoe(uid: "880843-003", name: "Acne Studios - Hayett Print off black / black / orange fl ", images: shoe2Images, price: 540, priceRent:97, description: "", detail: "")
+        let shoe2 = Shoe(uid: "880843-003", name: " Rodebjer - Jacket ", images: shoe2Images, price: 15, priceRent:97, description: "", detail: "")
         shoes.append(shoe2)
         
         
