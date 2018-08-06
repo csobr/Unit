@@ -38,7 +38,7 @@ class Shoe
         for i in 1...5{
             shoe1Images.append(UIImage(named: "s\(i)")!)
         }
-        let shoe1 = Shoe(uid: "875942-100", name: "Flippa K - Jacket", images: shoe1Images,price:"25", priceRent:25, description: "", detail: "")
+        let shoe1 = Shoe(uid: "875942-100", name: "Hope - Trousers", images: shoe1Images,price:"25", priceRent:25, description: "", detail: "")
         shoes.append(shoe1)
         
         // 2
