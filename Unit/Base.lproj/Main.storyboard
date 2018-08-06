@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="d0a-Ll-8un">
+                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="d0a-Ll-8un">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -125,13 +125,13 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bm0-K0-Flt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="610"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="305"/>
                                     <connections>
                                         <segue destination="dmj-Zy-qXT" kind="embed" identifier="ShowImagesPageViewController" id="NIZ-lR-Ok1"/>
                                     </connections>
                                 </containerView>
                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="oZr-Qn-R0J">
-                                    <rect key="frame" x="168" y="573" width="39" height="37"/>
+                                    <rect key="frame" x="168" y="268" width="39" height="37"/>
                                     <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </pageControl>
@@ -140,9 +140,9 @@
                             <constraints>
                                 <constraint firstItem="bm0-K0-Flt" firstAttribute="leading" secondItem="zAj-UI-UU0" secondAttribute="leading" id="7Uq-eR-ckO"/>
                                 <constraint firstItem="bm0-K0-Flt" firstAttribute="top" secondItem="zAj-UI-UU0" secondAttribute="top" id="EhH-KU-cRP"/>
-                                <constraint firstAttribute="bottom" secondItem="bm0-K0-Flt" secondAttribute="bottom" constant="-305" id="F49-La-qkr"/>
+                                <constraint firstAttribute="bottom" secondItem="bm0-K0-Flt" secondAttribute="bottom" id="F49-La-qkr"/>
                                 <constraint firstAttribute="trailing" secondItem="bm0-K0-Flt" secondAttribute="trailing" id="eX7-eZ-0mw"/>
-                                <constraint firstAttribute="bottom" secondItem="oZr-Qn-R0J" secondAttribute="bottom" constant="-305" id="nNM-Xa-jpB"/>
+                                <constraint firstAttribute="bottom" secondItem="oZr-Qn-R0J" secondAttribute="bottom" id="nNM-Xa-jpB"/>
                                 <constraint firstItem="oZr-Qn-R0J" firstAttribute="centerX" secondItem="zAj-UI-UU0" secondAttribute="centerX" id="r08-s2-qrE"/>
                             </constraints>
                             <connections>
@@ -150,24 +150,26 @@
                             </connections>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoeDetailCell" rowHeight="146" id="VBE-PV-Wh9" customClass="ShoeDetailCell" customModule="Unit" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="333" width="375" height="146"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoeDetailCell" rowHeight="100" id="VBE-PV-Wh9" customClass="ShoeDetailCell" customModule="Unit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="333" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VBE-PV-Wh9" id="tTn-dh-b6e">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="145.66666666666666"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hayett Print off black / black / orange fl " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqN-RQ-WYE">
-                                            <rect key="frame" x="68" y="36" width="239" height="95"/>
+                                            <rect key="frame" x="68" y="36" width="239" height="49"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="fqN-RQ-WYE" secondAttribute="bottom" constant="4" id="5Yd-1V-KOT"/>
-                                        <constraint firstItem="fqN-RQ-WYE" firstAttribute="centerX" secondItem="tTn-dh-b6e" secondAttribute="centerX" id="CLv-bx-66K"/>
-                                        <constraint firstItem="fqN-RQ-WYE" firstAttribute="top" secondItem="tTn-dh-b6e" secondAttribute="topMargin" constant="25" id="X8N-cN-e2h"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fqN-RQ-WYE" secondAttribute="trailing" constant="52" id="BaR-56-Vl6"/>
+                                        <constraint firstItem="fqN-RQ-WYE" firstAttribute="centerX" secondItem="tTn-dh-b6e" secondAttribute="centerX" id="aET-9L-v9o"/>
+                                        <constraint firstItem="fqN-RQ-WYE" firstAttribute="leading" secondItem="tTn-dh-b6e" secondAttribute="leadingMargin" constant="52" id="d8Y-tw-VQw"/>
+                                        <constraint firstItem="fqN-RQ-WYE" firstAttribute="top" secondItem="tTn-dh-b6e" secondAttribute="top" constant="36" id="kAD-5c-KoQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="fqN-RQ-WYE" secondAttribute="bottom" constant="14.67" id="q86-vn-raw"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -175,7 +177,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyButtonCell" rowHeight="65" id="97A-FI-inb">
-                                <rect key="frame" x="0.0" y="479" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="433" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="97A-FI-inb" id="6aa-uf-83E">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
@@ -208,7 +210,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProductDetailsCell" rowHeight="53" id="Nsz-Mk-Qd8">
-                                <rect key="frame" x="0.0" y="544" width="375" height="53"/>
+                                <rect key="frame" x="0.0" y="498" width="375" height="53"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nsz-Mk-Qd8" id="MHu-hs-fth">
                                     <rect key="frame" x="0.0" y="0.0" width="341" height="52.666666666666664"/>
@@ -225,12 +227,11 @@
                                         <constraint firstItem="PxR-BX-mPn" firstAttribute="top" secondItem="MHu-hs-fth" secondAttribute="top" constant="16" id="0eh-ja-eqz"/>
                                         <constraint firstAttribute="bottom" secondItem="PxR-BX-mPn" secondAttribute="bottom" constant="16" id="2YA-5g-Un7"/>
                                         <constraint firstItem="PxR-BX-mPn" firstAttribute="leading" secondItem="MHu-hs-fth" secondAttribute="leading" constant="12" id="cmG-Rt-Fco"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PxR-BX-mPn" secondAttribute="trailing" constant="20" symbolic="YES" id="or1-Yv-gxa"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuggestionCell" rowHeight="443" id="9XO-Wl-8qN" customClass="SuggestionTableViewCell" customModule="Unit" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="597" width="375" height="443"/>
+                                <rect key="frame" x="0.0" y="551" width="375" height="443"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9XO-Wl-8qN" id="6iB-ro-JJL">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="442.66666666666669"/>
@@ -306,7 +307,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oI2-hK-57E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2138.4000000000001" y="-702.70935960591135"/>
+            <point key="canvasLocation" x="2139.5" y="-702"/>
         </scene>
         <!--Shoe Images Page View Controller-->
         <scene sceneID="PCJ-R1-LF6">
