@@ -23,6 +23,9 @@
 		52FDBCE31E87718D00A59876 /* ShoeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDBCE21E87718D00A59876 /* ShoeImageViewController.swift */; };
 		52FDBCE51E8771FB00A59876 /* ShoeImagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDBCE41E8771FB00A59876 /* ShoeImagesPageViewController.swift */; };
 		52FDBCE71E877B0A00A59876 /* ShoeImagesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDBCE61E877B0A00A59876 /* ShoeImagesHeaderView.swift */; };
+		D1EF48D6211AFFE800CB8A62 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF48D3211AFFE700CB8A62 /* InterestCollectionViewCell.swift */; };
+		D1EF48D7211AFFE800CB8A62 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF48D4211AFFE700CB8A62 /* InterestsViewController.swift */; };
+		D1EF48D8211AFFE800CB8A62 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF48D5211AFFE800CB8A62 /* Interest.swift */; };
 		D1F78725211640B0008BF8E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F78724211640B0008BF8E8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 		52FDBCE21E87718D00A59876 /* ShoeImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeImageViewController.swift; sourceTree = "<group>"; };
 		52FDBCE41E8771FB00A59876 /* ShoeImagesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeImagesPageViewController.swift; sourceTree = "<group>"; };
 		52FDBCE61E877B0A00A59876 /* ShoeImagesHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeImagesHeaderView.swift; sourceTree = "<group>"; };
+		D1EF48D3211AFFE700CB8A62 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		D1EF48D4211AFFE700CB8A62 /* InterestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		D1EF48D5211AFFE800CB8A62 /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		D1F78724211640B0008BF8E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +88,9 @@
 				52E3D2131E7F0D990064B02E /* ViewController.swift */,
 				52E3D2151E7F0D990064B02E /* Main.storyboard */,
 				D1F78724211640B0008BF8E8 /* Assets.xcassets */,
+				D1EF48D5211AFFE800CB8A62 /* Interest.swift */,
+				D1EF48D3211AFFE700CB8A62 /* InterestCollectionViewCell.swift */,
+				D1EF48D4211AFFE700CB8A62 /* InterestsViewController.swift */,
 				52E3D2331E7F43FD0064B02E /* MODEL */,
 				52E3D2321E7F43DB0064B02E /* DETAIL */,
 				52E3D2311E7F43BD0064B02E /* FEED */,
@@ -213,13 +222,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EF48D6211AFFE800CB8A62 /* InterestCollectionViewCell.swift in Sources */,
 				52E3D2241E7F0DAD0064B02E /* Shoe.swift in Sources */,
+				D1EF48D8211AFFE800CB8A62 /* Interest.swift in Sources */,
 				52F7B6131E7F955D00735A46 /* ShoppingBagTableViewController.swift in Sources */,
 				52E3D2351E7F442B0064B02E /* ShoeDetailCell.swift in Sources */,
 				52E3D2141E7F0D990064B02E /* ViewController.swift in Sources */,
 				52FDBCE51E8771FB00A59876 /* ShoeImagesPageViewController.swift in Sources */,
 				52FDBCE31E87718D00A59876 /* ShoeImageViewController.swift in Sources */,
 				52E3D2121E7F0D990064B02E /* AppDelegate.swift in Sources */,
+				D1EF48D7211AFFE800CB8A62 /* InterestsViewController.swift in Sources */,
 				52E3D2281E7F14320064B02E /* FeedShoeTableViewCell.swift in Sources */,
 				52FB4BE11ECFE256002B2E93 /* SuggestionCollectionViewCell.swift in Sources */,
 				52E3D2261E7F136C0064B02E /* FeedTableViewController.swift in Sources */,
