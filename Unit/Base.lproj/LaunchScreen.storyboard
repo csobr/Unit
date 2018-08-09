@@ -1,27 +1,62 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3R3-M5-Svg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="cSx-C3-jKO">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController id="3R3-M5-Svg" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="4V8-tH-XzE"/>
+                        <viewControllerLayoutGuide type="bottom" id="pTf-3C-Q1M"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="N1V-R7-wcP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="ugradinat1" translatesAutoresizingMaskIntoConstraints="NO" id="cAi-3l-dfd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="u" translatesAutoresizingMaskIntoConstraints="NO" id="qsC-vV-OFH">
+                                <rect key="frame" x="163" y="308.5" width="49" height="50"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Copyright © 2018 Unit All rights reserved." textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npb-TL-M9W">
+                                <rect key="frame" x="98.5" y="630" width="178" height="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cAi-3l-dfd" firstAttribute="top" secondItem="N1V-R7-wcP" secondAttribute="top" id="BCX-ku-XG7"/>
+                            <constraint firstItem="qsC-vV-OFH" firstAttribute="centerY" secondItem="N1V-R7-wcP" secondAttribute="centerY" id="Hd5-7L-MRE"/>
+                            <constraint firstItem="cAi-3l-dfd" firstAttribute="bottom" secondItem="pTf-3C-Q1M" secondAttribute="top" id="PKd-JZ-IER"/>
+                            <constraint firstItem="qsC-vV-OFH" firstAttribute="centerY" secondItem="N1V-R7-wcP" secondAttribute="centerY" id="Rqb-zb-5wR"/>
+                            <constraint firstItem="pTf-3C-Q1M" firstAttribute="top" secondItem="npb-TL-M9W" secondAttribute="bottom" constant="25" id="Sd7-1w-iOI"/>
+                            <constraint firstItem="npb-TL-M9W" firstAttribute="centerX" secondItem="qsC-vV-OFH" secondAttribute="centerX" id="T97-yW-Fwj"/>
+                            <constraint firstAttribute="trailing" secondItem="cAi-3l-dfd" secondAttribute="trailing" id="bRr-mP-rzM"/>
+                            <constraint firstItem="cAi-3l-dfd" firstAttribute="leading" secondItem="N1V-R7-wcP" secondAttribute="leading" id="cST-MT-B4q"/>
+                            <constraint firstItem="qsC-vV-OFH" firstAttribute="centerX" secondItem="N1V-R7-wcP" secondAttribute="centerX" id="gXw-UM-7MG"/>
+                            <constraint firstItem="qsC-vV-OFH" firstAttribute="centerX" secondItem="N1V-R7-wcP" secondAttribute="centerX" id="uWQ-gG-3v0"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fM6-IA-Utv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="21.600000000000001" y="165.06746626686657"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="u" width="49" height="50"/>
+        <image name="ugradinat1" width="621" height="1104"/>
+    </resources>
 </document>
