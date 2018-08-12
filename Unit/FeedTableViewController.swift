@@ -1,9 +1,9 @@
 //
 //  FeedTableViewController.swift
-//  Nike+Research
+//  Unit
 //
-//  Created by Duc Tran on 3/19/17.
-//  Copyright © 2017 Developers Academy. All rights reserved.
+//  Created by  on 3/19/17.
+//  Copyright © 2018 Unit All rights reserved.
 //
 
 import UIKit

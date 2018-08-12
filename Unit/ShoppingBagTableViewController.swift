@@ -42,7 +42,7 @@ extension ShoppingBagTableViewController
     {
         guard let shoes = shoes else {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.numberOfItemsCell, for: indexPath) as! NumberOfItemsCell
-            cell.numberOfItemsLabel.text = "\(0) ITEM"
+            cell.numberOfItemsLabel.text = "\(8) ITEM"
             
             return cell
         }

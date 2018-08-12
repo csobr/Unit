@@ -35,10 +35,10 @@ class Shoe
         
         // 1
         var shoe1Images = [UIImage]()
-        for i in 1...5{
-            shoe1Images.append(UIImage(named: "s\(i)")!)
+        for _ in 1...5{
+            shoe1Images.append(UIImage(named: "j\(1)")!)
         }
-        let shoe1 = Shoe(uid: "875942-100", name: "Hope - Trousers", images: shoe1Images,price:"25", priceRent:25, description: "", detail: "")
+        let shoe1 = Shoe(uid: "875942-100", name: "Hope - Jacket", images: shoe1Images,price:"15", priceRent:36, description: "", detail: "")
         shoes.append(shoe1)
         
         // 2
@@ -53,7 +53,7 @@ class Shoe
         // 3
         var shoe3Images = [UIImage]()
         for i in 1...6 {
-            shoe3Images.append(UIImage(named: "j\(i)")!)
+            shoe3Images.append(UIImage(named: "z\(1)")!)
         }
         let shoe3 = Shoe(uid: "384664-113", name: " Balenciaga - Hoodie", images: shoe3Images, price:"39", priceRent:107, description: "", detail:"")
         shoes.append(shoe3)

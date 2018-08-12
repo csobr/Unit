@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WtA-1K-gAP">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -80,6 +80,8 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="MhY-RV-bsR" firstAttribute="leading" secondItem="v2e-ng-NS7" secondAttribute="leading" id="1N5-g7-XvY"/>
+                                        <constraint firstItem="MhY-RV-bsR" firstAttribute="leading" secondItem="v2e-ng-NS7" secondAttribute="leading" id="2Th-Tk-og9"/>
+                                        <constraint firstItem="i1b-ZR-hIs" firstAttribute="top" secondItem="MhY-RV-bsR" secondAttribute="bottom" constant="1" id="CUt-TR-P3J"/>
                                         <constraint firstItem="p9Q-dC-QOv" firstAttribute="leading" secondItem="i1b-ZR-hIs" secondAttribute="trailing" constant="71.333333333333343" id="Cvi-Iz-FHI"/>
                                         <constraint firstItem="5cR-kk-ipt" firstAttribute="centerX" secondItem="v2e-ng-NS7" secondAttribute="centerX" id="HNh-kX-D1f"/>
                                         <constraint firstItem="5cR-kk-ipt" firstAttribute="top" secondItem="i1b-ZR-hIs" secondAttribute="bottom" constant="3" id="Nit-ge-zD2"/>
@@ -89,7 +91,9 @@
                                         <constraint firstItem="i1b-ZR-hIs" firstAttribute="top" secondItem="MhY-RV-bsR" secondAttribute="bottom" constant="1" id="alD-eL-6gc"/>
                                         <constraint firstItem="p9Q-dC-QOv" firstAttribute="top" secondItem="MhY-RV-bsR" secondAttribute="bottom" constant="1" id="bcO-EG-Alk"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="5cR-kk-ipt" secondAttribute="bottom" id="fAa-qN-I7y"/>
+                                        <constraint firstAttribute="trailing" secondItem="MhY-RV-bsR" secondAttribute="trailing" id="k3g-6C-CPW"/>
                                         <constraint firstItem="i1b-ZR-hIs" firstAttribute="centerX" secondItem="v2e-ng-NS7" secondAttribute="centerX" id="pfb-gG-DSc"/>
+                                        <constraint firstItem="MhY-RV-bsR" firstAttribute="top" secondItem="v2e-ng-NS7" secondAttribute="top" id="pnp-tt-jtl"/>
                                         <constraint firstItem="5cR-kk-ipt" firstAttribute="top" secondItem="i1b-ZR-hIs" secondAttribute="bottom" constant="3" id="qqO-7I-dpn"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="p9Q-dC-QOv" secondAttribute="bottom" constant="41" id="x6d-xw-fWi"/>
                                         <constraint firstItem="MhY-RV-bsR" firstAttribute="top" secondItem="v2e-ng-NS7" secondAttribute="top" id="y7m-LC-WYd"/>
@@ -111,10 +115,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="New" id="tSE-2r-aOw">
                         <barButtonItem key="backBarButtonItem" title=" " id="nXk-dy-qiq"/>
-                        <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="3jO-Ru-crh">
+                        <barButtonItem key="leftBarButtonItem" image="Untitled" style="done" id="3jO-Ru-crh">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.25967020270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="elinolssen" id="FlF-RV-Dcp"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="pro20" id="FlF-RV-Dcp">
+                            <inset key="imageInsets" minX="0.0" minY="-4" maxX="0.0" maxY="0.0"/>
+                            <inset key="largeContentSizeImageInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -1098,7 +1105,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="0.49019607843137253" green="0.53725490196078429" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.6096362179" green="0.60885496019999996" blue="0.62250158629999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="2UP-GR-dzo" firstAttribute="bottom" secondItem="gTM-Ub-grL" secondAttribute="bottom" constant="7" id="5E4-UT-taC"/>
                             <constraint firstItem="22x-WO-5Sd" firstAttribute="top" secondItem="XPa-UL-Sbk" secondAttribute="bottom" constant="40" id="6fC-nA-qKM"/>
@@ -1147,8 +1154,8 @@
         <image name="icon-nike" width="25" height="25"/>
         <image name="icon-nike-filled" width="25" height="25"/>
         <image name="icon-plus" width="27" height="24"/>
-        <image name="menu" width="17" height="13"/>
         <image name="nav" width="50" height="50"/>
+        <image name="pro20" width="30" height="29"/>
         <image name="s1" width="455" height="475"/>
         <image name="t1" width="455" height="475"/>
     </resources>
