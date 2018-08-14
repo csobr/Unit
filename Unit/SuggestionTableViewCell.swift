@@ -1,10 +1,11 @@
 //
 //  SuggestionTableViewCell.swift
-//  Nike+Research
+//  Unit
 //
-//  Created by Duc Tran on 5/19/17.
-//  Copyright © 2017 Developers Academy. All rights reserved.
+//  Created by Siham Hadi on 3/10/18.
+//  Copyright © 2018 Unit All rights reserved.
 //
+
 
 import UIKit
 

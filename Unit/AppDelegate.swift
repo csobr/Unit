@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Nike+Research
+//  U
 //
 //  Created by Duc Tran on 3/19/17.
 //  Copyright © 2017 Developers Academy. All rights reserved.

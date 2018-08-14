@@ -1,9 +1,9 @@
 //
 //  ShoppingBagTableViewController.swift
-//  Nike+Research
+//  Unit
 //
-//  Created by Duc Tran on 3/19/17.
-//  Copyright © 2017 Developers Academy. All rights reserved.
+//  Created by  on 3/19/17.
+//  Copyright © 2018 Unit All rights reserved.
 //
 
 import UIKit
@@ -42,7 +42,7 @@ extension ShoppingBagTableViewController
     {
         guard let shoes = shoes else {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.numberOfItemsCell, for: indexPath) as! NumberOfItemsCell
-            cell.numberOfItemsLabel.text = "\(8) ITEM"
+            cell.numberOfItemsLabel.text = "\(4) ITEM"
             
             return cell
         }

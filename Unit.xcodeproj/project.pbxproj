@@ -11,7 +11,7 @@
 		52E3D2141E7F0D990064B02E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2131E7F0D990064B02E /* ViewController.swift */; };
 		52E3D2171E7F0D990064B02E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D2151E7F0D990064B02E /* Main.storyboard */; };
 		52E3D21C1E7F0D990064B02E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D21A1E7F0D990064B02E /* LaunchScreen.storyboard */; };
-		52E3D2241E7F0DAD0064B02E /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2231E7F0DAD0064B02E /* Shoe.swift */; };
+		52E3D2241E7F0DAD0064B02E /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2231E7F0DAD0064B02E /* Clothes.swift */; };
 		52E3D2261E7F136C0064B02E /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2251E7F136C0064B02E /* FeedTableViewController.swift */; };
 		52E3D2281E7F14320064B02E /* FeedShoeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2271E7F14320064B02E /* FeedShoeTableViewCell.swift */; };
 		52E3D22E1E7F32FD0064B02E /* ShoeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D22D1E7F32FD0064B02E /* ShoeDetailTableViewController.swift */; };
@@ -38,7 +38,7 @@
 		52E3D2161E7F0D990064B02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52E3D21B1E7F0D990064B02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52E3D21D1E7F0D990064B02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52E3D2231E7F0DAD0064B02E /* Shoe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
+		52E3D2231E7F0DAD0064B02E /* Clothes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
 		52E3D2251E7F136C0064B02E /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		52E3D2271E7F14320064B02E /* FeedShoeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedShoeTableViewCell.swift; sourceTree = "<group>"; };
 		52E3D22D1E7F32FD0064B02E /* ShoeDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeDetailTableViewController.swift; sourceTree = "<group>"; };
@@ -94,14 +94,12 @@
 				52E3D2131E7F0D990064B02E /* ViewController.swift */,
 				52E3D2151E7F0D990064B02E /* Main.storyboard */,
 				D1F78724211640B0008BF8E8 /* Assets.xcassets */,
-				D1EF48D5211AFFE800CB8A62 /* Interest.swift */,
-				D1EF48D3211AFFE700CB8A62 /* InterestCollectionViewCell.swift */,
-				D1EF48D4211AFFE700CB8A62 /* InterestsViewController.swift */,
-				D12D12BB211C56230007C4AB /* GrandiantView.swift */,
+				D1B1B5332121CE80000A0B98 /* Explore */,
 				52E3D2331E7F43FD0064B02E /* MODEL */,
 				52E3D2321E7F43DB0064B02E /* DETAIL */,
 				52E3D2311E7F43BD0064B02E /* FEED */,
 				52F7B6141E7F956100735A46 /* SHOPPING BAG */,
+				D12D12BB211C56230007C4AB /* GrandiantView.swift */,
 				52E3D21A1E7F0D990064B02E /* LaunchScreen.storyboard */,
 				52E3D21D1E7F0D990064B02E /* Info.plist */,
 			);
@@ -131,7 +129,7 @@
 		52E3D2331E7F43FD0064B02E /* MODEL */ = {
 			isa = PBXGroup;
 			children = (
-				52E3D2231E7F0DAD0064B02E /* Shoe.swift */,
+				52E3D2231E7F0DAD0064B02E /* Clothes.swift */,
 			);
 			name = MODEL;
 			sourceTree = "<group>";
@@ -154,6 +152,16 @@
 				52FB4BE01ECFE256002B2E93 /* SuggestionCollectionViewCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		D1B1B5332121CE80000A0B98 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				D1EF48D5211AFFE800CB8A62 /* Interest.swift */,
+				D1EF48D4211AFFE700CB8A62 /* InterestsViewController.swift */,
+				D1EF48D3211AFFE700CB8A62 /* InterestCollectionViewCell.swift */,
+			);
+			name = Explore;
 			sourceTree = "<group>";
 		};
 		D1DE238F2121B3B6003EB196 /* Frameworks */ = {
@@ -191,7 +199,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Developers Academy";
 				TargetAttributes = {
 					52E3D20D1E7F0D990064B02E = {
@@ -238,7 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1EF48D6211AFFE800CB8A62 /* InterestCollectionViewCell.swift in Sources */,
-				52E3D2241E7F0DAD0064B02E /* Shoe.swift in Sources */,
+				52E3D2241E7F0DAD0064B02E /* Clothes.swift in Sources */,
 				D1EF48D8211AFFE800CB8A62 /* Interest.swift in Sources */,
 				52F7B6131E7F955D00735A46 /* ShoppingBagTableViewController.swift in Sources */,
 				52E3D2351E7F442B0064B02E /* ShoeDetailCell.swift in Sources */,
@@ -293,6 +301,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -300,6 +309,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -349,6 +359,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -356,6 +367,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -398,6 +410,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -414,6 +427,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
