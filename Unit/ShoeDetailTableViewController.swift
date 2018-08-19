@@ -23,7 +23,7 @@ class ShoeDetailTableViewController : UITableViewController
         self.tableView.estimatedRowHeight = self.tableView.rowHeight
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
-        self.tabBarController?.tabBar.items![3].badgeValue = "3"
+        self.tabBarController?.tabBar.items![2].badgeValue = "4"
     }
     
     struct Storyboard {
