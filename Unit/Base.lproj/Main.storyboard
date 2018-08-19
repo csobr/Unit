@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WtA-1K-gAP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WtA-1K-gAP">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,19 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="d0a-Ll-8un">
+                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="d0a-Ll-8un">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav" translatesAutoresizingMaskIntoConstraints="NO" id="0s9-SI-ejn">
-                                    <rect key="frame" x="304" y="8" width="8" height="8"/>
+                                    <rect key="frame" x="304" y="8.6666666666666661" width="8" height="7.9999999999999982"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="8" id="8Gr-5w-0hP"/>
                                         <constraint firstAttribute="width" constant="8" id="AFd-eq-9PF"/>
                                     </constraints>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2A-gA-Uhi">
-                                    <rect key="frame" x="324" y="58" width="30" height="22"/>
+                                    <rect key="frame" x="324.66666666666669" y="58" width="30" height="22"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="8"/>
                                     <state key="normal" title="FILTER">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,13 +72,13 @@
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dagmar - Coat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1b-ZR-hIs">
-                                            <rect key="frame" x="148.33333333333334" y="374" width="79.666666666666657" height="21"/>
+                                            <rect key="frame" x="147.66666666666666" y="374" width="79.666666666666657" height="21"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9Q-dC-QOv">
-                                            <rect key="frame" x="266" y="376" width="35" height="18"/>
+                                            <rect key="frame" x="265.33333333333331" y="376" width="36" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="gyy-qR-b2N"/>
                                             </constraints>
@@ -136,7 +134,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="menu-1" id="bAc-5r-3fg">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.25967020270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="elinolssen" id="QSc-2F-krw">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="pro20" id="QSc-2F-krw">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.25967020270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                     </navigationItem>
@@ -218,7 +216,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyButtonCell" rowHeight="65" id="97A-FI-inb">
                                 <rect key="frame" x="0.0" y="433" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="97A-FI-inb" id="6aa-uf-83E">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="97A-FI-inb" id="6aa-uf-83E">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -675,7 +673,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkoutButtonCell" rowHeight="65" id="uHd-TD-Y98">
                                 <rect key="frame" x="0.0" y="440" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uHd-TD-Y98" id="13y-1x-Qvf">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="uHd-TD-Y98" id="13y-1x-Qvf">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -977,7 +975,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="submitButtonCell" rowHeight="65" id="gy2-nO-Nwt">
                                 <rect key="frame" x="0.0" y="702" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gy2-nO-Nwt" id="OZY-2r-YGe">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="gy2-nO-Nwt" id="OZY-2r-YGe">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -1185,7 +1183,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="elinolssen" width="25" height="25"/>
         <image name="f1" width="455" height="475"/>
         <image name="icon-bag" width="26" height="27"/>
         <image name="icon-bag-filled" width="25" height="26"/>
