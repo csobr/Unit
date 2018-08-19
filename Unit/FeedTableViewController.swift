@@ -20,7 +20,7 @@ class FeedTableViewController : UITableViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "New"
+        navigationItem.title = "NEW"
         
         shoes = Shoe.fetchShoes()
         self.tableView.reloadData()

@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  U
+// Unit
 //
-//  Created by Duc Tran on 3/19/17.
-//  Copyright © 2017 Developers Academy. All rights reserved.
+//  Created by Siham Hadi on 2018-02-27.
+//  Copyright © 2018 Siham Hadi. All rights reserved.
 //
 
 import UIKit
