@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Unit
 //
-//  Created by Siham Hadi on 3/9/18.
+//  Created by Siham Hadi on 3/9 ¨
 //  Copyright © 2018 Unit All rights reserved.
 //
 
@@ -19,11 +19,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
         
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01,0.01)
-        let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude,
+        let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.01,longitudeDelta: 0.01)
+        let currentLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude,
         location.coordinate.longitude)
         
-        let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        let region: MKCoordinateRegion = MKCoordinateRegion(center: currentLocation, span: span)
         mapView.setRegion(region, animated: true)
         
         print(location.altitude)

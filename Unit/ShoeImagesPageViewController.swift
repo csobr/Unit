@@ -45,6 +45,7 @@ class ShoeImagesPageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+       
         automaticallyAdjustsScrollViewInsets = false
         dataSource = self
         delegate = self
@@ -55,7 +56,7 @@ class ShoeImagesPageViewController: UIPageViewController {
     func turnToPage(index: Int)
     {
         let controller = controllers[index]
-        var direction = UIPageViewControllerNavigationDirection.forward
+        var direction = UIPageViewController.NavigationDirection.forward
         
         if let currentVC = viewControllers?.first {
             let currentIndex = controllers.index(of: currentVC)!
