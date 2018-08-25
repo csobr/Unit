@@ -23,7 +23,7 @@ class CheckoutTableViewController: UITableViewController
         super.viewDidLoad()
         
         self.tableView.estimatedRowHeight = tableView.rowHeight
-        tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 }
 

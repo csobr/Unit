@@ -44,9 +44,8 @@ class ShoeImagesPageViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
        
-        automaticallyAdjustsScrollViewInsets = false
+    UITableView.appearance().contentInsetAdjustmentBehavior = .never
         dataSource = self
         delegate = self
         

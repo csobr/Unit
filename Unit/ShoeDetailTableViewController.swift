@@ -21,7 +21,7 @@ class ShoeDetailTableViewController : UITableViewController
         title = shoe.name
         
         self.tableView.estimatedRowHeight = self.tableView.rowHeight
-        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         
         self.tabBarController?.tabBar.items![2].badgeValue = "4"
     }
@@ -99,7 +99,7 @@ extension ShoeDetailTableViewController
         if indexPath.row == 3 {
             return tableView.bounds.width + 68.0
         } else {
-            return UITableView.automaticDimension
+            return UITableViewAutomaticDimension
         }
     }
 }

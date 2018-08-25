@@ -61,8 +61,8 @@ class Shoe
         
         // 4
         var shoe4Images = [UIImage]()
-        for i in 1...6 {
-            shoe4Images.append(UIImage(named: "f\(i)")!)
+        for _ in 1...6 {
+            shoe4Images.append(UIImage(named: "f1")!)
         }
         let shoe4 = Shoe(uid: "805144-852", name: "Filippa k", images: shoe4Images, price: "47", priceRent:80, description: "", detail: "")
         shoes.append(shoe4)

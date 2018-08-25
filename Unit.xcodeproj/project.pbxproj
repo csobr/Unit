@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		D11EB60420FF9530000BCD5C /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EB60320FF9530000BCD5C /* Interest.swift */; };
 		D15E475F212B076F00B8D1B5 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E475E212B076F00B8D1B5 /* InterestCollectionViewCell.swift */; };
 		D15E4761212B077C00B8D1B5 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E4760212B077C00B8D1B5 /* InterestsViewController.swift */; };
+		D1B70427213162490097D9EB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B70426213162490097D9EB /* SWRevealViewController.m */; };
 		D1DE23912121B3B6003EB196 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DE23902121B3B6003EB196 /* CoreLocation.framework */; };
 		D1F78725211640B0008BF8E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F78724211640B0008BF8E8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,9 @@
 		D11EB60320FF9530000BCD5C /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		D15E475E212B076F00B8D1B5 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
 		D15E4760212B077C00B8D1B5 /* InterestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		D1B70425213162490097D9EB /* Unit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unit-Bridging-Header.h"; sourceTree = "<group>"; };
+		D1B70426213162490097D9EB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D1B70428213162510097D9EB /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D1DE23902121B3B6003EB196 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D1F78724211640B0008BF8E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +76,7 @@
 				52E3D2101E7F0D990064B02E /* Unit */,
 				52E3D20F1E7F0D990064B02E /* Products */,
 				D1DE238F2121B3B6003EB196 /* Frameworks */,
+				D1B70425213162490097D9EB /* Unit-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +94,8 @@
 				52E3D2111E7F0D990064B02E /* AppDelegate.swift */,
 				52E3D2131E7F0D990064B02E /* ViewController.swift */,
 				52E3D2151E7F0D990064B02E /* Main.storyboard */,
+				D1B70426213162490097D9EB /* SWRevealViewController.m */,
+				D1B70428213162510097D9EB /* SWRevealViewController.h */,
 				D1F78724211640B0008BF8E8 /* Assets.xcassets */,
 				D1B1B5332121CE80000A0B98 /* Explore */,
 				52E3D2331E7F43FD0064B02E /* MODEL */,
@@ -194,17 +201,17 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "Developers Academy";
+				ORGANIZATIONNAME = Unit;
 				TargetAttributes = {
 					52E3D20D1E7F0D990064B02E = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = 52E3D2091E7F0D990064B02E /* Build configuration list for PBXProject "Unit" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -239,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E3D2241E7F0DAD0064B02E /* Clothes.swift in Sources */,
+				D1B70427213162490097D9EB /* SWRevealViewController.m in Sources */,
 				52F7B6131E7F955D00735A46 /* ShoppingBagTableViewController.swift in Sources */,
 				D11EB60420FF9530000BCD5C /* Interest.swift in Sources */,
 				52E3D2351E7F442B0064B02E /* ShoeDetailCell.swift in Sources */,
@@ -320,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -372,10 +380,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -385,13 +394,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Unit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = unitlocal.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Unit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -402,13 +418,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Unit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = unitlocal.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Unit-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
