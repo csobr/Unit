@@ -45,26 +45,26 @@ class Shoe
         // 2
         var shoe2Images = [UIImage]()
         for _ in 1...3 {
-            shoe2Images.append(UIImage(named: "x1")!)
+            shoe2Images.append(UIImage(named: "l1")!)
         }
-        let shoe2 = Shoe(uid: "880843-003", name: " Rodebjer - Trousers ", images: shoe2Images, price: "15", priceRent:97, description: "", detail: "")
+        let shoe2 = Shoe(uid: "880843-003", name: " Rodebjer - Jacket ", images: shoe2Images, price: "15", priceRent:97, description: "", detail: "")
         shoes.append(shoe2)
         
         
         // 3
         var shoe3Images = [UIImage]()
         for _ in 1...6 {
-            shoe3Images.append(UIImage(named: "j1")!)
+            shoe3Images.append(UIImage(named: "s1")!)
         }
-        let shoe3 = Shoe(uid: "384664-113", name: "Hope - Jacket", images: shoe3Images, price:"39", priceRent:107, description: "", detail:"")
+        let shoe3 = Shoe(uid: "384664-113", name: "Hope - Trousers", images: shoe3Images, price:"39", priceRent:107, description: "", detail:"")
         shoes.append(shoe3)
         
         // 4
         var shoe4Images = [UIImage]()
         for _ in 1...6 {
-            shoe4Images.append(UIImage(named: "f1")!)
+            shoe4Images.append(UIImage(named: "j2")!)
         }
-        let shoe4 = Shoe(uid: "805144-852", name: "Filippa k", images: shoe4Images, price: "47", priceRent:80, description: "", detail: "")
+        let shoe4 = Shoe(uid: "805144-852", name: "Filippa K - Jacket", images: shoe4Images, price: "47", priceRent:80, description: "", detail: "")
         shoes.append(shoe4)
         
         return shoes
