@@ -22,11 +22,13 @@
 		52FDBCE31E87718D00A59876 /* ShoeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDBCE21E87718D00A59876 /* ShoeImageViewController.swift */; };
 		52FDBCE51E8771FB00A59876 /* ShoeImagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDBCE41E8771FB00A59876 /* ShoeImagesPageViewController.swift */; };
 		52FDBCE71E877B0A00A59876 /* ShoeImagesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDBCE61E877B0A00A59876 /* ShoeImagesHeaderView.swift */; };
+		D113E3B321495EC2008A04B0 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E3B221495EC2008A04B0 /* ProductCell.swift */; };
 		D11EB60420FF9530000BCD5C /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EB60320FF9530000BCD5C /* Interest.swift */; };
 		D15E475F212B076F00B8D1B5 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E475E212B076F00B8D1B5 /* InterestCollectionViewCell.swift */; };
 		D15E4761212B077C00B8D1B5 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E4760212B077C00B8D1B5 /* InterestsViewController.swift */; };
 		D1B70427213162490097D9EB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B70426213162490097D9EB /* SWRevealViewController.m */; };
 		D1DE23912121B3B6003EB196 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DE23902121B3B6003EB196 /* CoreLocation.framework */; };
+		D1EF082D214A7CEE003188FE /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF082C214A7CEE003188FE /* ProductViewController.swift */; };
 		D1F78725211640B0008BF8E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F78724211640B0008BF8E8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,7 @@
 		52FDBCE21E87718D00A59876 /* ShoeImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeImageViewController.swift; sourceTree = "<group>"; };
 		52FDBCE41E8771FB00A59876 /* ShoeImagesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeImagesPageViewController.swift; sourceTree = "<group>"; };
 		52FDBCE61E877B0A00A59876 /* ShoeImagesHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeImagesHeaderView.swift; sourceTree = "<group>"; };
+		D113E3B221495EC2008A04B0 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		D11EB60320FF9530000BCD5C /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		D15E475E212B076F00B8D1B5 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
 		D15E4760212B077C00B8D1B5 /* InterestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		D1B70426213162490097D9EB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		D1B70428213162510097D9EB /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D1DE23902121B3B6003EB196 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D1EF082C214A7CEE003188FE /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		D1F78724211640B0008BF8E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +97,9 @@
 			children = (
 				52E3D2111E7F0D990064B02E /* AppDelegate.swift */,
 				52E3D2131E7F0D990064B02E /* ViewController.swift */,
+				D1EF082C214A7CEE003188FE /* ProductViewController.swift */,
 				52E3D2151E7F0D990064B02E /* Main.storyboard */,
+				D113E3B221495EC2008A04B0 /* ProductCell.swift */,
 				D1B70426213162490097D9EB /* SWRevealViewController.m */,
 				D1B70428213162510097D9EB /* SWRevealViewController.h */,
 				D1F78724211640B0008BF8E8 /* Assets.xcassets */,
@@ -248,6 +254,7 @@
 				52E3D2241E7F0DAD0064B02E /* Clothes.swift in Sources */,
 				D1B70427213162490097D9EB /* SWRevealViewController.m in Sources */,
 				52F7B6131E7F955D00735A46 /* ShoppingBagTableViewController.swift in Sources */,
+				D1EF082D214A7CEE003188FE /* ProductViewController.swift in Sources */,
 				D11EB60420FF9530000BCD5C /* Interest.swift in Sources */,
 				52E3D2351E7F442B0064B02E /* ShoeDetailCell.swift in Sources */,
 				D15E4761212B077C00B8D1B5 /* InterestsViewController.swift in Sources */,
@@ -256,6 +263,7 @@
 				52FDBCE31E87718D00A59876 /* ShoeImageViewController.swift in Sources */,
 				52E3D2121E7F0D990064B02E /* AppDelegate.swift in Sources */,
 				D15E475F212B076F00B8D1B5 /* InterestCollectionViewCell.swift in Sources */,
+				D113E3B321495EC2008A04B0 /* ProductCell.swift in Sources */,
 				52E3D2281E7F14320064B02E /* FeedShoeTableViewCell.swift in Sources */,
 				52FB4BE11ECFE256002B2E93 /* SuggestionCollectionViewCell.swift in Sources */,
 				52E3D2261E7F136C0064B02E /* FeedTableViewController.swift in Sources */,

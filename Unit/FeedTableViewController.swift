@@ -12,7 +12,7 @@ class FeedTableViewController : UITableViewController
 {
     var shoes: [Shoe]?
     
-    @IBOutlet weak var menuButton: UIBarButtonItem!
+ 
     struct Storyboard {
         static let feedShoeCell = "FeedShoeCell"
         static let showShoeDetail = "ShowShoeDetail"
@@ -20,7 +20,6 @@ class FeedTableViewController : UITableViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sideMenu()
         
         navigationItem.title = "NEW"
         
@@ -30,18 +29,7 @@ class FeedTableViewController : UITableViewController
         self.tableView.estimatedRowHeight = tableView.rowHeight
         self.tableView.rowHeight = UITableViewAutomaticDimension
     }
-    func sideMenu() {
-        
-        if revealViewController() != nil {
-            
-            menuButton.target = revealViewController()
-            menuButton.action = #selector (SWRevealViewController.revealToggle(_:))
-            revealViewController()?.rearViewRevealWidth =  275
-            revealViewController()?.rightViewRevealWidth = 160
-            
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-    }
+ 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Storyboard.showShoeDetail {
