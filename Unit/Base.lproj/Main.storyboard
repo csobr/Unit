@@ -84,7 +84,9 @@
                                             <constraint firstItem="495-Zs-4Fa" firstAttribute="leading" secondItem="KKe-9R-Hjn" secondAttribute="leadingMargin" constant="22" id="ykn-bJ-Xa7"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="imageView" destination="495-Zs-4Fa" id="mjS-hQ-4EG"/>
+                                            <outlet property="imageView" destination="495-Zs-4Fa" id="co3-SR-boY"/>
+                                            <outlet property="productName" destination="87V-hN-YEp" id="rS7-X4-ZGK"/>
+                                            <outlet property="rentprice" destination="Yfq-Mb-3hC" id="Zmo-SV-WFe"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -97,13 +99,21 @@
                                     <outlet property="delegate" destination="0Gt-Ng-JNn" id="AeM-EM-Gnm"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmR-rp-ulS">
+                                <rect key="frame" x="178" y="77" width="143" height="30"/>
+                                <state key="normal" title="Choose dep"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="PPv-BA-git" secondAttribute="trailing" id="08j-Ny-4En"/>
                             <constraint firstItem="jSI-cZ-rOv" firstAttribute="bottom" secondItem="PPv-BA-git" secondAttribute="bottom" id="0EE-ac-i0G"/>
+                            <constraint firstItem="dmR-rp-ulS" firstAttribute="leading" secondItem="jSI-cZ-rOv" secondAttribute="leading" constant="178" id="2DB-WB-2mk"/>
                             <constraint firstItem="jSI-cZ-rOv" firstAttribute="trailing" secondItem="NAL-fu-49a" secondAttribute="trailing" constant="16" id="2DG-x3-fyp"/>
+                            <constraint firstItem="jSI-cZ-rOv" firstAttribute="trailing" secondItem="dmR-rp-ulS" secondAttribute="trailing" constant="93" id="2jd-Av-W70"/>
                             <constraint firstItem="NAL-fu-49a" firstAttribute="centerY" secondItem="I5Y-ph-TMv" secondAttribute="centerY" id="96b-fQ-M65"/>
+                            <constraint firstItem="PPv-BA-git" firstAttribute="top" secondItem="dmR-rp-ulS" secondAttribute="bottom" constant="8" id="Hto-rG-1jt"/>
+                            <constraint firstItem="dmR-rp-ulS" firstAttribute="top" secondItem="jSI-cZ-rOv" secondAttribute="top" constant="13" id="NDa-NK-K8o"/>
                             <constraint firstItem="PPv-BA-git" firstAttribute="top" secondItem="jSI-cZ-rOv" secondAttribute="top" constant="51" id="Qeb-Xg-an1"/>
                             <constraint firstItem="PPv-BA-git" firstAttribute="bottom" secondItem="jSI-cZ-rOv" secondAttribute="bottom" id="WLz-Hd-7ew"/>
                             <constraint firstItem="NAL-fu-49a" firstAttribute="leading" secondItem="jSI-cZ-rOv" secondAttribute="leading" constant="16" id="eco-2p-0L4"/>
@@ -485,7 +495,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v4r-KW-9Ms" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1089" y="-330"/>
+            <point key="canvasLocation" x="-245" y="-52"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7GX-w9-QPR">
@@ -1291,7 +1301,7 @@
         <image name="icon-bag-filled" width="25" height="26"/>
         <image name="icon-home" width="24" height="25"/>
         <image name="icon-search" width="24" height="25"/>
-        <image name="menu" width="23" height="18"/>
+        <image name="menu" width="23" height="17"/>
         <image name="s1" width="455" height="475"/>
         <image name="s2" width="1080" height="1350"/>
         <image name="t1" width="455" height="475"/>

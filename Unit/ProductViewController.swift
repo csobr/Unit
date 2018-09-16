@@ -5,7 +5,7 @@
 //  Created by Siham Hadi on 2018-09-12.
 //  Copyright © 2018 Unit. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
 class ProductViewController: UIViewController {
@@ -13,18 +13,21 @@ class ProductViewController: UIViewController {
     //Mark : Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
- 
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
+
 // Mark: - Properties
-    let images = [#imageLiteral(resourceName: "t2.jpg"),#imageLiteral(resourceName: "z1.jpg"),#imageLiteral(resourceName: "r1.jpg"),#imageLiteral(resourceName: "u1.jpg"),]
+let store = DataStore.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        store.getProductImages {
+            self.collectionView.reloadSections(IndexSet(integer: 0))
+        }
         sideMenu()
     
-    
     }
+    
 //  Side Menu
 func sideMenu() {
     if SWRevealViewController() != nil {
@@ -43,28 +46,25 @@ func sideMenu() {
         
         //MARK: - UICollectionViewDelegateFlowLayout
         
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
-        {
-            return CGSize(width: 175.0, height: 400.0)
-        }
-    }
-    
-    
-    
-    
-    
+            func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+            {
+                return CGSize(width: 170, height: 400.0)
+            }
+}
+
     //Mark: Datasource
-    extension ProductViewController:UICollectionViewDataSource {
+    extension ProductViewController: UICollectionViewDataSource {
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return images.count
+            return store.products.count
         }
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) ->
             UICollectionViewCell {
                 
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as! ProductCell
-                let image = images[indexPath.item]
-                cell.imageView.image = image
+                
+                let produkt = store.products[indexPath.row]
+                cell.displayContent(image: store.images[indexPath.row], title: produkt.name, price: produkt.price)
                 
                 return cell
                 
@@ -72,6 +72,4 @@ func sideMenu() {
         }
 }
 
-
-    
 
