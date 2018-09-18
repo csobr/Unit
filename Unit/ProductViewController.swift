@@ -15,10 +15,11 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-
+    
 // Mark: - Properties
 let store = DataStore.sharedInstance
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         store.getProductImages {
@@ -27,7 +28,7 @@ let store = DataStore.sharedInstance
         sideMenu()
     
     }
-    
+
 //  Side Menu
 func sideMenu() {
     if SWRevealViewController() != nil {
@@ -40,6 +41,8 @@ func sideMenu() {
     }
 }
 }
+
+
     //Mark: - Flow layout delegate
     
         extension ProductViewController: UICollectionViewDelegateFlowLayout{
@@ -70,6 +73,9 @@ func sideMenu() {
                 
                 
         }
+        func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+            let productDetailController = ProductDetailViewController()
+            navigationController?.pushViewController(productDetailController, animated: true)
+        }
 }
-
 

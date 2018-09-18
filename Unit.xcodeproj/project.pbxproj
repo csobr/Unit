@@ -10,20 +10,7 @@
 		52E3D2121E7F0D990064B02E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2111E7F0D990064B02E /* AppDelegate.swift */; };
 		52E3D2141E7F0D990064B02E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2131E7F0D990064B02E /* ViewController.swift */; };
 		52E3D2171E7F0D990064B02E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D2151E7F0D990064B02E /* Main.storyboard */; };
-		52E3D2241E7F0DAD0064B02E /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2231E7F0DAD0064B02E /* Clothes.swift */; };
-		52E3D2261E7F136C0064B02E /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2251E7F136C0064B02E /* FeedTableViewController.swift */; };
-		52E3D2281E7F14320064B02E /* FeedShoeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2271E7F14320064B02E /* FeedShoeTableViewCell.swift */; };
-		52E3D22E1E7F32FD0064B02E /* ShoeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D22D1E7F32FD0064B02E /* ShoeDetailTableViewController.swift */; };
-		52E3D2351E7F442B0064B02E /* ShoeDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D2341E7F442B0064B02E /* ShoeDetailCell.swift */; };
-		52F7B6131E7F955D00735A46 /* ShoppingBagTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7B6121E7F955D00735A46 /* ShoppingBagTableViewController.swift */; };
-		52F7B6161E7F9F7E00735A46 /* CheckoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7B6151E7F9F7E00735A46 /* CheckoutTableViewController.swift */; };
-		52FB4BDF1ECFE1FF002B2E93 /* SuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB4BDE1ECFE1FF002B2E93 /* SuggestionTableViewCell.swift */; };
-		52FB4BE11ECFE256002B2E93 /* SuggestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB4BE01ECFE256002B2E93 /* SuggestionCollectionViewCell.swift */; };
-		52FDBCE31E87718D00A59876 /* ShoeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDBCE21E87718D00A59876 /* ShoeImageViewController.swift */; };
-		52FDBCE51E8771FB00A59876 /* ShoeImagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDBCE41E8771FB00A59876 /* ShoeImagesPageViewController.swift */; };
-		52FDBCE71E877B0A00A59876 /* ShoeImagesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDBCE61E877B0A00A59876 /* ShoeImagesHeaderView.swift */; };
 		796A9308F1112BDCC6258C60 /* Pods_Unit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB38CF9C27E87A5CBB422B9 /* Pods_Unit.framework */; };
-		D10C9330214BAB2D0071BDF6 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D10C932F214BAB2D0071BDF6 /* awsconfiguration.json */; };
 		D10C9334214BAB3B0071BDF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10C9333214BAB3B0071BDF6 /* Assets.xcassets */; };
 		D113E3B321495EC2008A04B0 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E3B221495EC2008A04B0 /* ProductCell.swift */; };
 		D11EB60420FF9530000BCD5C /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EB60320FF9530000BCD5C /* Interest.swift */; };
@@ -34,6 +21,7 @@
 		D15E4761212B077C00B8D1B5 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E4760212B077C00B8D1B5 /* InterestsViewController.swift */; };
 		D1B70427213162490097D9EB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B70426213162490097D9EB /* SWRevealViewController.m */; };
 		D1DE23912121B3B6003EB196 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DE23902121B3B6003EB196 /* CoreLocation.framework */; };
+		D1E9DC752151361300CBDB2C /* ProductDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E9DC742151361300CBDB2C /* ProductDetailTableViewController.swift */; };
 		D1EF082D214A7CEE003188FE /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF082C214A7CEE003188FE /* ProductViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,20 +32,7 @@
 		52E3D2131E7F0D990064B02E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52E3D2161E7F0D990064B02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52E3D21D1E7F0D990064B02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52E3D2231E7F0DAD0064B02E /* Clothes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
-		52E3D2251E7F136C0064B02E /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
-		52E3D2271E7F14320064B02E /* FeedShoeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedShoeTableViewCell.swift; sourceTree = "<group>"; };
-		52E3D22D1E7F32FD0064B02E /* ShoeDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeDetailTableViewController.swift; sourceTree = "<group>"; };
-		52E3D2341E7F442B0064B02E /* ShoeDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeDetailCell.swift; sourceTree = "<group>"; };
-		52F7B6121E7F955D00735A46 /* ShoppingBagTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingBagTableViewController.swift; sourceTree = "<group>"; };
-		52F7B6151E7F9F7E00735A46 /* CheckoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewController.swift; sourceTree = "<group>"; };
-		52FB4BDE1ECFE1FF002B2E93 /* SuggestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewCell.swift; sourceTree = "<group>"; };
-		52FB4BE01ECFE256002B2E93 /* SuggestionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionCollectionViewCell.swift; sourceTree = "<group>"; };
-		52FDBCE21E87718D00A59876 /* ShoeImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeImageViewController.swift; sourceTree = "<group>"; };
-		52FDBCE41E8771FB00A59876 /* ShoeImagesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeImagesPageViewController.swift; sourceTree = "<group>"; };
-		52FDBCE61E877B0A00A59876 /* ShoeImagesHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeImagesHeaderView.swift; sourceTree = "<group>"; };
 		ABB38CF9C27E87A5CBB422B9 /* Pods_Unit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D10C932F214BAB2D0071BDF6 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = ../../../Downloads/awsconfiguration.json; sourceTree = "<group>"; };
 		D10C9333214BAB3B0071BDF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D113E3B221495EC2008A04B0 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		D11EB60320FF9530000BCD5C /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
@@ -70,6 +45,7 @@
 		D1B70426213162490097D9EB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		D1B70428213162510097D9EB /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D1DE23902121B3B6003EB196 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D1E9DC742151361300CBDB2C /* ProductDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailTableViewController.swift; sourceTree = "<group>"; };
 		D1EF082C214A7CEE003188FE /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		DD91BC6EE16BC06AB3752301 /* Pods-Unit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Unit/Pods-Unit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,71 +88,19 @@
 				52E3D2111E7F0D990064B02E /* AppDelegate.swift */,
 				52E3D2131E7F0D990064B02E /* ViewController.swift */,
 				D1EF082C214A7CEE003188FE /* ProductViewController.swift */,
-				D159902D214EF627002A09DF /* DataStore.swift */,
 				D113E3B221495EC2008A04B0 /* ProductCell.swift */,
 				D1599029214EF5D0002A09DF /* Product.swift */,
 				D159902B214EF5E6002A09DF /* APIClient.swift */,
+				D159902D214EF627002A09DF /* DataStore.swift */,
 				52E3D2151E7F0D990064B02E /* Main.storyboard */,
+				D1E9DC742151361300CBDB2C /* ProductDetailTableViewController.swift */,
+				D10C9333214BAB3B0071BDF6 /* Assets.xcassets */,
 				D1B70426213162490097D9EB /* SWRevealViewController.m */,
 				D1B70428213162510097D9EB /* SWRevealViewController.h */,
-				D10C9333214BAB3B0071BDF6 /* Assets.xcassets */,
 				D1B1B5332121CE80000A0B98 /* Explore */,
-				52E3D2331E7F43FD0064B02E /* MODEL */,
-				52E3D2321E7F43DB0064B02E /* DETAIL */,
-				52E3D2311E7F43BD0064B02E /* FEED */,
-				52F7B6141E7F956100735A46 /* SHOPPING BAG */,
 				52E3D21D1E7F0D990064B02E /* Info.plist */,
 			);
 			path = Unit;
-			sourceTree = "<group>";
-		};
-		52E3D2311E7F43BD0064B02E /* FEED */ = {
-			isa = PBXGroup;
-			children = (
-				52E3D2251E7F136C0064B02E /* FeedTableViewController.swift */,
-				52E3D2271E7F14320064B02E /* FeedShoeTableViewCell.swift */,
-			);
-			name = FEED;
-			sourceTree = "<group>";
-		};
-		52E3D2321E7F43DB0064B02E /* DETAIL */ = {
-			isa = PBXGroup;
-			children = (
-				52E3D22D1E7F32FD0064B02E /* ShoeDetailTableViewController.swift */,
-				52FDBCE21E87718D00A59876 /* ShoeImageViewController.swift */,
-				52FDBCE41E8771FB00A59876 /* ShoeImagesPageViewController.swift */,
-				52FDBCE11E8759FC00A59876 /* Views */,
-			);
-			name = DETAIL;
-			sourceTree = "<group>";
-		};
-		52E3D2331E7F43FD0064B02E /* MODEL */ = {
-			isa = PBXGroup;
-			children = (
-				52E3D2231E7F0DAD0064B02E /* Clothes.swift */,
-			);
-			name = MODEL;
-			sourceTree = "<group>";
-		};
-		52F7B6141E7F956100735A46 /* SHOPPING BAG */ = {
-			isa = PBXGroup;
-			children = (
-				D10C932F214BAB2D0071BDF6 /* awsconfiguration.json */,
-				52F7B6121E7F955D00735A46 /* ShoppingBagTableViewController.swift */,
-				52F7B6151E7F9F7E00735A46 /* CheckoutTableViewController.swift */,
-			);
-			name = "SHOPPING BAG";
-			sourceTree = "<group>";
-		};
-		52FDBCE11E8759FC00A59876 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				52FDBCE61E877B0A00A59876 /* ShoeImagesHeaderView.swift */,
-				52E3D2341E7F442B0064B02E /* ShoeDetailCell.swift */,
-				52FB4BDE1ECFE1FF002B2E93 /* SuggestionTableViewCell.swift */,
-				52FB4BE01ECFE256002B2E93 /* SuggestionCollectionViewCell.swift */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		D1B1B5332121CE80000A0B98 /* Explore */ = {
@@ -270,7 +194,6 @@
 			files = (
 				52E3D2171E7F0D990064B02E /* Main.storyboard in Resources */,
 				D10C9334214BAB3B0071BDF6 /* Assets.xcassets in Resources */,
-				D10C9330214BAB2D0071BDF6 /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,28 +225,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52E3D2241E7F0DAD0064B02E /* Clothes.swift in Sources */,
 				D1B70427213162490097D9EB /* SWRevealViewController.m in Sources */,
-				52F7B6131E7F955D00735A46 /* ShoppingBagTableViewController.swift in Sources */,
 				D1EF082D214A7CEE003188FE /* ProductViewController.swift in Sources */,
 				D11EB60420FF9530000BCD5C /* Interest.swift in Sources */,
 				D159902C214EF5E7002A09DF /* APIClient.swift in Sources */,
-				52E3D2351E7F442B0064B02E /* ShoeDetailCell.swift in Sources */,
+				D1E9DC752151361300CBDB2C /* ProductDetailTableViewController.swift in Sources */,
 				D15E4761212B077C00B8D1B5 /* InterestsViewController.swift in Sources */,
 				52E3D2141E7F0D990064B02E /* ViewController.swift in Sources */,
-				52FDBCE51E8771FB00A59876 /* ShoeImagesPageViewController.swift in Sources */,
-				52FDBCE31E87718D00A59876 /* ShoeImageViewController.swift in Sources */,
 				52E3D2121E7F0D990064B02E /* AppDelegate.swift in Sources */,
 				D15E475F212B076F00B8D1B5 /* InterestCollectionViewCell.swift in Sources */,
 				D113E3B321495EC2008A04B0 /* ProductCell.swift in Sources */,
-				52E3D2281E7F14320064B02E /* FeedShoeTableViewCell.swift in Sources */,
-				52FB4BE11ECFE256002B2E93 /* SuggestionCollectionViewCell.swift in Sources */,
-				52E3D2261E7F136C0064B02E /* FeedTableViewController.swift in Sources */,
-				52FDBCE71E877B0A00A59876 /* ShoeImagesHeaderView.swift in Sources */,
-				52E3D22E1E7F32FD0064B02E /* ShoeDetailTableViewController.swift in Sources */,
-				52F7B6161E7F9F7E00735A46 /* CheckoutTableViewController.swift in Sources */,
 				D159902E214EF627002A09DF /* DataStore.swift in Sources */,
-				52FB4BDF1ECFE1FF002B2E93 /* SuggestionTableViewCell.swift in Sources */,
 				D159902A214EF5D0002A09DF /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -442,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
