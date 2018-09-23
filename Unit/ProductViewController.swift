@@ -4,31 +4,36 @@
 //
 //  Created by Siham Hadi on 2018-09-12.
 //  Copyright © 2018 Unit. All rights reserved.
-//
-import Foundation
-import UIKit
 
-class ProductViewController: UIViewController {
+//
+struct Product : Codable { //(types should be capitalized)
+var name: String
+var price: String//try the `URL` type! it's codable and much better than `String` for storing URLs
+var imageUrl: URL?
+    
+    
+    public enum CodingKeys: String, CodingKey { case name, price} //this is usually synthesized, but we have to define it ourselves to exclude `urlImage`
+    
+}
+import UIKit
+class ProductViewController:  UIViewController, UICollectionViewDelegateFlowLayout,UICollectionViewDataSource{
     
     //Mark : Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-    
-// Mark: - Properties
-let store = DataStore.sharedInstance
+
+var product = [Product]()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        store.getProductImages {
-            self.collectionView.reloadSections(IndexSet(integer: 0))
-        }
-        sideMenu()
+    sideMenu()
+    fetchJSON()
+        
     
     }
-
 //  Side Menu
 func sideMenu() {
     if SWRevealViewController() != nil {
@@ -40,42 +45,61 @@ func sideMenu() {
         view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 }
-}
-
-
-    //Mark: - Flow layout delegate
     
-        extension ProductViewController: UICollectionViewDelegateFlowLayout{
+    // 
+    fileprivate func fetchJSON() {
+        let UrlString = "https://s3.amazonaws.com/jsondecode/products.json"
         
-        //MARK: - UICollectionViewDelegateFlowLayout
+        guard let url = URL(string:UrlString) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, err) in
+            //perhaps check err //also perhaps check response status 200 OK
+            
+            guard let data = data else { return }
+            
+            do {
+                let productItem =  try
+                    JSONDecoder().decode([Product].self, from: data)
+                self.product = productItem
+        
+            } catch let jsonErr {
+                print("Error serializing json:", jsonErr)
+            }
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+                
+            }
+            
+
+            
+            }.resume()
+        
+    }
+
+    
+    //MARK: - UICollectionViewDelegateFlowLayout
         
             func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
             {
                 return CGSize(width: 175, height: 400.0)
             }
-}
 
     //Mark: Datasource
-    extension ProductViewController: UICollectionViewDataSource {
+ 
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return store.products.count
+            return product.count
         }
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) ->
             UICollectionViewCell {
                 
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as! ProductCell
-                
-                let produkt = store.products[indexPath.row]
-                cell.displayContent(image: store.images[indexPath.row], title: produkt.name, price: produkt.price)
-                
+                let productInfo = product[indexPath.row]
+    
+                cell.productName.text = productInfo.name
+                cell.rentprice.text = productInfo.price
+              
                 return cell
                 
                 
-        }
-        func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-            let productDetailController = ProductDetailViewController()
-            navigationController?.pushViewController(productDetailController, animated: true)
-        }
-}
-
+    }}
