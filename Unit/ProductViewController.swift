@@ -9,11 +9,19 @@
 struct Product : Codable { //(types should be capitalized)
 var name: String
 var price: String//try the `URL` type! it's codable and much better than `String` for storing URLs
-var imageUrl: URL?
+var imageUrl: String
+
     
+    init (name:String, price: String, imageUrl: String) {
+        self.name = name
+        self.price = price
+        self.imageUrl = imageUrl
+    }
     
-    public enum CodingKeys: String, CodingKey { case name, price} //this is usually synthesized, but we have to define it ourselves to exclude `urlImage`
-    
+}
+
+struct  ProductImage {
+var imageUrl: UIImage
 }
 import UIKit
 class ProductViewController:  UIViewController, UICollectionViewDelegateFlowLayout,UICollectionViewDataSource{
@@ -23,8 +31,10 @@ class ProductViewController:  UIViewController, UICollectionViewDelegateFlowLayo
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
+    
 
 var product = [Product]()
+
 
 
     override func viewDidLoad() {
@@ -58,10 +68,11 @@ func sideMenu() {
             guard let data = data else { return }
             
             do {
+                
                 let productItem =  try
                     JSONDecoder().decode([Product].self, from: data)
                 self.product = productItem
-        
+                
             } catch let jsonErr {
                 print("Error serializing json:", jsonErr)
             }
@@ -83,6 +94,29 @@ func sideMenu() {
             {
                 return CGSize(width: 175, height: 400.0)
             }
+    
+    // seuge
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let detailvc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailTableViewController")
+            as? ProductDetailTableViewController
+        let productInfo = product[indexPath.row]
+        detailvc?.name = productInfo.name
+        detailvc?.price = productInfo.price
+        
+        if let productImage = URL (string: product[indexPath.row].imageUrl) {
+           
+                let data = try? Data (contentsOf: productImage)
+                if let data = data {
+                    let imagedetail = UIImage (data: data)
+                    
+                         detailvc?.image = imagedetail!
+                    }
+                }
+        self.navigationController?.pushViewController(detailvc!, animated: true)
+    
+    }
 
     //Mark: Datasource
  
@@ -95,11 +129,29 @@ func sideMenu() {
                 
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as! ProductCell
                 let productInfo = product[indexPath.row]
-    
+            
                 cell.productName.text = productInfo.name
                 cell.rentprice.text = productInfo.price
-              
+                
+                if let productImage = URL (string: product[indexPath.row].imageUrl) {
+                    DispatchQueue.global().async {
+                        let data = try? Data (contentsOf: productImage)
+                        if let data = data {
+                            let imageUrl = UIImage (data: data)
+                            DispatchQueue.main.async {
+                                
+                                cell.imageView.image = imageUrl
+                                
+                            }
+                    }
+                    
+                    }
+                }
+             
                 return cell
                 
                 
-    }}
+                
+    }
+}
+
